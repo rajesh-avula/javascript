@@ -1,0 +1,53 @@
+<h1>Map vs Filter vs Reduce</h1>
+<div>
+    <b>Map</b>--> used to transform data present in an array
+	The length of output array will be always equal to input array
+	Ex : var numbers = [1,2,3,4,5]
+		How to multiply each value with 2
+		numbers.map((a) => { return a*2}) // Output [2, 4, 6, 8, 10]
+</div>
+
+        <ul></ul>
+<div>
+        Filter --> used to filter records based on condition
+        The length of output array will be less than or equal input array
+        Ex : var numbers = [1,2,3,4,5]
+            How to find even numbers
+            numbers.filter((a) => { return a%2 ==0}) // Output [2, 4]
+        </div>
+            <ul></ul>
+<div>
+            Reduce --> used to calculate a single value from the values present in an array
+	The length of output array will be always 1
+	
+	Ex : var numbers = [1,2,3,4,5]
+	How to find sum of values in array	
+		numbers.reduce((a,b) => {return a+b}) // Output 15
+	How to find max number in array
+		numbers.reduce((a,b) => { return Math.max(a,b)}) // Output 5
+    </div>
+    <ul></ul>
+<div>
+        <h2>Random scenarios</h2>
+<div>
+        What if we use "map" to filter the data : 
+                var  numbers = [1,2,3,4,5];
+                numbers.map((a) => { return a%2 == 0}) // Output [false, true, false, true, false]
+                
+                Map cannot used to filter data , it is used to just transform data in this case map will execute condition (a%2 ==0) and stores output in result.
+                
+                1 % 2 == 0 --> false
+                2 % 2 == 0 --> true
+                3 % 2 == 0 --> false
+                4 % 2 == 0 --> true
+                5 % 2 == 0 --> false
+                
+         * Remember output length will be always equal to input when we use map
+        </div>
+        <div>
+        What if we use "filter"  to transform data.
+        
+                var numbers = [1,2,3,4,5];
+                numbers.filter((a) => { return a*2}) //Output [1, 2, 3, 4, 5]
+            </div>
+            </div>
