@@ -1,53 +1,60 @@
+<header class="page-header" role="banner">
+    <h1 class="project-name">Welcome to Javascript</h1>
+    <h2 class="project-tagline"></h2>
+    
+      <a href="https://github.com/rajesh-avula/javascript" class="btn">View on GitHub</a>
+      <link href="./post.css" rel="stylesheet" crossorigin="anonymous">
+</header>
 <h1>Map vs Filter vs Reduce</h1>
 <div>
-    <b>Map</b>--> used to transform data present in an array
-	The length of output array will be always equal to input array
-	Ex : var numbers = [1,2,3,4,5]
-		How to multiply each value with 2
-		numbers.map((a) => { return a*2}) // Output [2, 4, 6, 8, 10]
+    <b>Map</b>--> used to transform data present in an array <br>
+	The length of output array will be always equal to input array <br>
+	Ex : var numbers = [1,2,3,4,5] <br>
+		How to multiply each value with 2 <br>
+		numbers.map((a) => { return a*2}) // Output [2, 4, 6, 8, 10] <br>
 </div>
 
-        <ul></ul>
+        <hr>
 <div>
-        Filter --> used to filter records based on condition
-        The length of output array will be less than or equal input array
-        Ex : var numbers = [1,2,3,4,5]
-            How to find even numbers
-            numbers.filter((a) => { return a%2 ==0}) // Output [2, 4]
+        Filter --> used to filter records based on condition <br>
+        The length of output array will be less than or equal input array <br>
+        Ex : var numbers = [1,2,3,4,5] <br>
+            How to find even numbers <br>
+            numbers.filter((a) => { return a%2 ==0}) // Output [2, 4] <br>
         </div>
-            <ul></ul>
+            <hr>
 <div>
-            Reduce --> used to calculate a single value from the values present in an array
-	The length of output array will be always 1
+            Reduce --> used to calculate a single value from the values present in an array <br>
+	The length of output array will be always 1 <br>
 	
-	Ex : var numbers = [1,2,3,4,5]
-	How to find sum of values in array	
-		numbers.reduce((a,b) => {return a+b}) // Output 15
-	How to find max number in array
-		numbers.reduce((a,b) => { return Math.max(a,b)}) // Output 5
+	Ex : var numbers = [1,2,3,4,5] <br>
+	How to find sum of values in array	 <br>
+		numbers.reduce((a,b) => {return a+b}) // Output 15 <br>
+	How to find max number in array <br>
+		numbers.reduce((a,b) => { return Math.max(a,b)}) // Output 5 <br>
     </div>
-    <ul></ul>
+    <hr>
 <div>
         <h2>Random scenarios</h2>
 <div>
-        What if we use "map" to filter the data : 
-                var  numbers = [1,2,3,4,5];
-                numbers.map((a) => { return a%2 == 0}) // Output [false, true, false, true, false]
+        What if we use "map" to filter the data : <br>
+                var  numbers = [1,2,3,4,5];<br>
+                numbers.map((a) => { return a%2 == 0}) // Output [false, true, false, true, false]<br>
                 
-                Map cannot used to filter data , it is used to just transform data in this case map will execute condition (a%2 ==0) and stores output in result.
+                Map cannot used to filter data , it is used to just transform data in this case map will execute condition (a%2 ==0) and stores output in result.<br>
                 
-                1 % 2 == 0 --> false
-                2 % 2 == 0 --> true
-                3 % 2 == 0 --> false
-                4 % 2 == 0 --> true
-                5 % 2 == 0 --> false
+                1 % 2 == 0 --> false<br>
+                2 % 2 == 0 --> true<br>
+                3 % 2 == 0 --> false<br>
+                4 % 2 == 0 --> true<br>
+                5 % 2 == 0 --> false<br>
                 
-         * Remember output length will be always equal to input when we use map
+         * Remember output length will be always equal to input when we use map<br>
         </div>
         <div>
-        What if we use "filter"  to transform data.
+        What if we use "filter"  to transform data.<br>
         
-                var numbers = [1,2,3,4,5];
-                numbers.filter((a) => { return a*2}) //Output [1, 2, 3, 4, 5]
+                var numbers = [1,2,3,4,5];<br>
+                numbers.filter((a) => { return a*2}) //Output [1, 2, 3, 4, 5]<br>
             </div>
             </div>
