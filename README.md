@@ -1,6 +1,8 @@
 ## Welcome to Javascript 
 
 
+<a href="/javascript/post1.html">Map Vs Filter Vs Reduce</a>
+
 
 ### Contact
 
